@@ -1,6 +1,9 @@
 #!/usr/bin/env node
+
 const Yargs = require('yargs')
-Yargs
+const orderPizza = require('./option')
+
+const {argv } = Yargs
 .scriptName("order")
 .example("$0 -p -c gouda", `Returns you ordered a pizza with:"
  - peppers
@@ -9,7 +12,9 @@ Yargs
  .alias("p", "pepper")
  .describe("p","Add peppers")
  .demandOption("p", "Peppers is required")
- .alias("c", "--cheese <type>")
+ .alias("c", "--cheese")
  .describe("c", "Add the specified type of cheese")
  .alias("C", "no-cheese")
  .describe("C","You do not want any cheese")
+
+ orderPizza(argv)
