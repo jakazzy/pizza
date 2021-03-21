@@ -1,0 +1,33 @@
+{
+  "name": "pizza",
+  "version": "1.0.0",
+  "description": "A cli for ordering pizza, adopted from the example in commander(https://github.com/tj/commander.js/blob/master/examples/pizza) but built with yargs",
+  "main": "index.js",
+  "scripts": {
+    "standard": "standard",
+    "tape": "tape 'test/**/*.spac.js'",
+    "test": "npm run standard && npm run tape"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakazzy/pizza.git"
+  },
+  "keywords": [
+    "tape",
+    "yargs"
+  ],
+  "author": "jakazzy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakazzy/pizza/issues"
+  },
+  "homepage": "https://github.com/jakazzy/pizza#readme",
+  "dependencies": {
+    "yargs": "16.2.0"
+  },
+  "devDependencies": {
+    "standard": "16.0.3",
+    "tap-spec": "5.0.0",
+    "tape": "5.2.2"
+  }
+}
