@@ -8,6 +8,9 @@
     "tape": "tape 'test/**/*.spac.js'",
     "test": "npm run standard && npm run tape"
   },
+  "bin": {
+    "order": "./lib/order.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jakazzy/pizza.git"
