@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "standard": "standard",
-    "tape": "tape 'test/**/*.spac.js'",
-    "test": "npm run standard && npm run tape"
+    "tape": "tape 'test/**/*.test.js' | tap-spec",
+    "test": "npm run tape"
   },
   "bin": {
     "order": "./lib/order.js"
