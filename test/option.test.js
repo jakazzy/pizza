@@ -1,6 +1,6 @@
 const test = require('tape')
 const { createCLIWrapper } = require('./test-utils')
-// tape, child_process, and assert on stderr/stdout/exit code
+
 
 test(`pizza orders`, (t)=>{
     
